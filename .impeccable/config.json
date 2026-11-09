@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "radial-halo",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-09T23:06:08.907Z",
+        "reason": "Claude: the radial gradients draw vinyl record labels and grooves (brand disc and cover placeholder), not a decorative glow"
+      }
+    ]
+  }
+}

@@ -224,7 +224,7 @@ h1 { font: 700 22px/1.1 var(--display); margin: 0; letter-spacing: -0.01em; }
 /* ---------- Бар (сотрудники) ---------- */
 .tabbar.four { grid-template-columns: repeat(4, 1fr); }
 .bar-now {
-  background: var(--bg-2); border: 1px solid var(--line); border-left: 4px solid var(--accent);
+  background: #241c15; border: 1px solid #4a3a28;
   border-radius: var(--radius); padding: 14px 14px 12px;
 }
 .bar-clock { color: var(--muted); font-size: 13px; font-weight: 600; }
