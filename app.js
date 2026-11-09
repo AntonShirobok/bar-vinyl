@@ -50,18 +50,22 @@
     });
   }
 
-  async function loadCatalog() {
-    if (API) {
-      try {
-        const res = await fetch(API, { redirect: 'follow' });
-        const d = await res.json();
-        if (d.ok && d.records && d.records.length) { store.set('catalog', d.records); return d.records; }
-      } catch (e) { /* fall through */ }
-      const cached = store.get('catalog', null);
-      if (cached) return cached;
-    }
+  // Сначала показываем сохранённую копию (мгновенно), потом тихо обновляем из таблицы:
+  // Google Apps Script после простоя «просыпается» до 10 секунд.
+  async function loadLocalCatalog() {
+    const cached = store.get('catalog', null);
+    if (cached && cached.length) return cached;
     const res = await fetch('data/vinyl.json');
     return res.json();
+  }
+  async function loadFreshCatalog() {
+    if (!API) return null;
+    try {
+      const res = await fetch(API, { redirect: 'follow' });
+      const d = await res.json();
+      if (d.ok && d.records && d.records.length) { store.set('catalog', d.records); return d.records; }
+    } catch (e) { /* остаёмся на копии */ }
+    return null;
   }
   async function loadCovers() {
     try { const r = await fetch('data/covers.json'); return await r.json(); } catch (e) { return {}; }
@@ -434,12 +438,24 @@
   async function init() {
     wire();
     renderMoods();
-    const [raw, covers] = await Promise.all([loadCatalog(), loadCovers(), loadFavs()]);
+    const fresh = loadFreshCatalog();
+    const [raw, covers] = await Promise.all([loadLocalCatalog(), loadCovers(), loadFavs()]);
     state.covers = covers || {};
     state.records = prep(raw);
     buildShelves();
     renderGrid();
     updateFavUI();
+    fresh.then((list) => {
+      if (!list || JSON.stringify(list) === JSON.stringify(raw)) return;
+      state.records = prep(list);
+      const shelf = state.shelf;
+      buildShelves();
+      state.shelf = shelf;
+      document.querySelectorAll('.chip').forEach((x) => x.setAttribute('aria-selected', String(Number(x.dataset.shelf) === shelf)));
+      renderGrid();
+      if (state.view === 'favs') renderFavs();
+      if (state.view === 'pick') renderPick();
+    });
     const start = tg && tg.initDataUnsafe && tg.initDataUnsafe.start_param;
     if (start === 'pick') showView('pick');
     if (start === 'favs') showView('favs');
