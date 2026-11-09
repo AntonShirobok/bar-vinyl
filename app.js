@@ -8,7 +8,7 @@
   const state = {
     records: [], covers: {}, shelves: [],
     shelf: 0, q: '', decade: '', tempo: '', sort: 'shelf',
-    mood: null, current: null, view: 'catalog',
+    mood: null, current: null, view: 'catalog', isStaff: false,
     favs: [], // короткие хеши пластинок, новые в начале
   };
   const col = (no) => (no > 0 ? SHELF_COLORS[(no - 1) % SHELF_COLORS.length] : '#6b5f55');
@@ -376,6 +376,171 @@
     return many;
   }
 
+  // ---------- Бар: что поставить сейчас (только сотрудникам) ----------
+  // Время смены: всё до 6 утра считается продолжением вчерашнего вечера.
+  const SLOTS = [
+    { id: 'day', from: 6, to: 16, icon: '☀️', name: 'День',
+      tip: 'Фон для разговоров и обеда. Негромко и мягко, без резкого вокала.',
+      bpm: [70, 105],
+      like: /jazz|soul|city pop|bossa|folk|acoustic|smooth|ambient|downtempo|lo-fi|chanson|bolero|latin|singer|neo-soul|soft rock|aor|flamenco|new age|dream pop/i,
+      avoid: /metal|punk|hard rock|grunge|techno|metalcore|industrial|rap|big room|eurodisco/i },
+    { id: 'after', from: 16, to: 19, icon: '🌇', name: 'После работы',
+      tip: 'Люди приходят выдохнуть. Тёплый грув, средний темп.',
+      bpm: [85, 115],
+      like: /soul|funk|city pop|neo-soul|r&b|soft rock|aor|indie|jazz|art pop|dream pop|psychedelic pop|britpop|folk rock|bossa|balearic/i,
+      avoid: /metal|punk|techno|metalcore|industrial|big room|ambient|experimental/i },
+    { id: 'evening', from: 19, to: 22, icon: '🍷', name: 'Вечер',
+      tip: 'Зал заполняется. Узнаваемые альбомы, классика рока и соула, грув.',
+      bpm: [95, 125],
+      like: /funk|soul|disco|rock|synth-pop|new wave|art rock|britpop|r&b|city pop|psychedelic|glam|mod|blues/i,
+      avoid: /ambient|experimental|metalcore|minimal|new age|бард|electroacoustic/i },
+    { id: 'peak', from: 22, to: 25, icon: '🔥', name: 'Пик',
+      tip: 'Самое людное время. Энергия и ритм, можно громче.',
+      bpm: [110, 140],
+      like: /disco|funk|house|dance|rock|britpop|garage|punk|hip-hop|eurodisco|italo|electro|synth-pop|big beat|mod|glam|eurobeat|ska/i,
+      avoid: /ambient|chanson|folk|бард|experimental|new age|minimalism|soft rock|bolero|smooth/i },
+    { id: 'late', from: 25, to: 27, icon: '🌙', name: 'Глубокая ночь',
+      tip: 'Остались свои. Электроника, хип-хоп, гипнотичный грув.',
+      bpm: [95, 130],
+      like: /house|techno|electronic|idm|minimal|trip-hop|hip-hop|deep|balearic|psychedelic|garage|neo-soul|alternative|industrial|rap/i,
+      avoid: /chanson|эстрад|schlager|bolero|folk|soft rock|aor/i },
+    { id: 'close', from: 27, to: 30, icon: '🕯', name: 'Закрытие',
+      tip: 'Сбавляем обороты. Медленно и тихо, подводим к закрытию.',
+      bpm: [60, 100],
+      like: /ambient|downtempo|jazz|soul|lo-fi|chill|acoustic|minimalism|new age|dream pop|neo-soul|trip-hop|singer|electroacoustic/i,
+      avoid: /punk|metal|disco|house|eurodisco|techno|big room|hard rock|dance/i },
+  ];
+  const CROWD = { quiet: { label: 'Тихо', shift: -12 }, normal: { label: 'Нормально', shift: 0 }, packed: { label: 'Битком', shift: 10 } };
+  const DAYS = ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'];
+  const PLAYED_KEY = 'played';
+  const PLAYED_TTL = 10 * 3600 * 1000;
+  const bar = { slot: null, crowd: store.get('crowd', 'normal'), manual: false };
+
+  function shiftClock(d = new Date()) {
+    let h = d.getHours() + d.getMinutes() / 60;
+    const day = new Date(d);
+    if (h < 6) { h += 24; day.setDate(day.getDate() - 1); }
+    return { h, day };
+  }
+  function currentSlot() {
+    const { h } = shiftClock();
+    return SLOTS.find((s) => h >= s.from && h < s.to) || SLOTS[0];
+  }
+  function playedMap() {
+    const now = Date.now();
+    const m = store.get(PLAYED_KEY, {});
+    Object.keys(m).forEach((k) => { if (now - m[k] > PLAYED_TTL) delete m[k]; });
+    return m;
+  }
+  function seeded(str) { // стабильный «случай» на час: список не скачет при каждом открытии
+    let h = 2166136261;
+    for (let i = 0; i < str.length; i++) { h ^= str.charCodeAt(i); h = Math.imul(h, 16777619); }
+    return ((h >>> 0) % 1000) / 1000;
+  }
+  function slotRange(slot) {
+    const { day } = shiftClock();
+    const weekend = slot.from >= 19 && (day.getDay() === 5 || day.getDay() === 6);
+    const s = CROWD[bar.crowd].shift + (weekend ? 5 : 0);
+    return [slot.bpm[0] + s, slot.bpm[1] + s, weekend];
+  }
+  function scoreFor(r, slot, lo, hi) {
+    const text = `${r.genre} ${r.album}`;
+    const likes = (text.match(new RegExp(slot.like.source, 'gi')) || []).length;
+    let s = Math.min(likes, 3) * 2;
+    if (slot.avoid.test(text)) s -= 6;
+    const m = mid(r);
+    if (m != null) {
+      if (m >= lo && m <= hi) s += 3;
+      else s -= Math.min((m < lo ? lo - m : m - hi) / 8, 4);
+    }
+    return s;
+  }
+  function recommend(slot) {
+    const [lo, hi] = slotRange(slot);
+    const played = playedMap();
+    const hourSeed = `${new Date().toDateString()}|${new Date().getHours()}|${slot.id}|${bar.crowd}`;
+    const scored = state.records
+      .filter((r) => !r.unsure)
+      .map((r) => ({ r, s: scoreFor(r, slot, lo, hi) + seeded(hourSeed + keyOf(r)) * 1.5, played: !!played[keyOf(r)] }))
+      .filter((x) => x.s > 2);
+    scored.sort((a, b) => b.s - a.s);
+    const out = [], artists = new Set();
+    for (const x of scored) {
+      if (x.played || artists.has(x.r.artist)) continue;
+      artists.add(x.r.artist);
+      out.push(x.r);
+      if (out.length === 10) break;
+    }
+    return { list: out, lo, hi, playedCount: Object.keys(played).length };
+  }
+  const fmtH = (h) => `${String(h % 24).padStart(2, '0')}:00`;
+
+  function renderBar() {
+    if (!state.isStaff) return;
+    if (!bar.manual) bar.slot = currentSlot().id;
+    const slot = SLOTS.find((s) => s.id === bar.slot);
+    const now = new Date();
+    const { day } = shiftClock(now);
+    const { list, lo, hi, playedCount } = recommend(slot);
+    const weekend = slotRange(slot)[2];
+    const nowSlot = currentSlot();
+    const nextSlot = SLOTS[(SLOTS.indexOf(nowSlot) + 1) % SLOTS.length];
+    $('#bar-now').innerHTML = `
+      <div class="bar-clock">${now.toLocaleTimeString('ru-RU', { hour: '2-digit', minute: '2-digit' })} · ${DAYS[day.getDay()]}${weekend ? ' · выходной вечер' : ''}</div>
+      <div class="bar-slot"><span>${slot.icon}</span>${slot.name}${bar.manual ? ' <em>выбрано вручную</em>' : ''}</div>
+      <p class="bar-tip">${slot.tip}</p>
+      <div class="bar-target">Темп <b>${lo}–${hi} BPM</b>${!bar.manual ? ` · с ${fmtH(nextSlot.from)} «${nextSlot.name}»` : ''}</div>`;
+    $('#bar-slots').innerHTML = SLOTS.map((s) => `<button class="chip" data-slot="${s.id}" aria-selected="${s.id === slot.id}">${s.icon} ${s.name}${s.id === nowSlot.id ? ' · сейчас' : ''}</button>`).join('');
+    const selChip = $('#bar-slots [aria-selected="true"]');
+    if (selChip) selChip.scrollIntoView({ inline: 'center', block: 'nearest' });
+    $('#bar-crowd').innerHTML = Object.entries(CROWD).map(([k, v]) => `<button data-crowd="${k}" aria-pressed="${k === bar.crowd}">${v.label}</button>`).join('');
+    $('#bar-list').innerHTML = list.map((r, i) => `
+      <div class="bar-item">
+        <button class="bar-open" data-id="${r.id}">
+          <span class="bar-rank">${i + 1}</span>${coverHTML(r)}
+          <span class="bar-txt"><b>${esc(r.album)}</b><span>${esc(r.artist)}</span></span>
+        </button>
+        <div class="bar-meta">
+          <span class="bar-shelf" style="--c:${col(r.shelfNo)}">Полка ${r.shelfNo}</span>
+          <span class="bar-bpm">${esc(r.bpm || '—')}</span>
+          <button class="bar-play" data-play="${esc(keyOf(r))}" aria-label="Отметить: ставлю">▶</button>
+        </div>
+      </div>`).join('') || '<p class="empty">Под это время ничего не подобралось. Попробуй другую загруженность.</p>';
+    $('#bar-played').innerHTML = playedCount
+      ? `Уже играли за смену: ${playedCount}, они скрыты из подсказок. <button class="link" id="bar-reset">Сбросить</button>`
+      : 'Нажми ▶, когда ставишь пластинку: до конца смены она пропадёт из подсказок.';
+    wireCovers($('#bar-list'));
+  }
+  function markPlayed(key) {
+    const m = playedMap();
+    m[key] = Date.now();
+    store.set(PLAYED_KEY, m);
+    try { tg && tg.HapticFeedback.notificationOccurred('success'); } catch (e) {}
+    const r = state.records.find((x) => keyOf(x) === key);
+    toast(r ? `Играет: ${r.artist} — ${r.album}` : 'Отмечено');
+    renderBar();
+  }
+
+  async function checkStaff() {
+    if (location.hostname === 'localhost' && new URLSearchParams(location.search).has('staff')) return true; // только для проверки на компьютере
+    const initData = (tg && tg.initData) || '';
+    if (!API || !initData) return false;
+    try {
+      const res = await fetch(API, { method: 'POST', body: JSON.stringify({ action: 'me', initData }) });
+      const d = await res.json();
+      return !!(d.ok && d.isStaff);
+    } catch (e) {
+      return store.get('isStaff', false); // нет сети: помним прошлую проверку
+    }
+  }
+  function enableStaff(on) {
+    state.isStaff = on;
+    store.set('isStaff', on);
+    document.querySelector('.tab[data-view="bar"]').hidden = !on;
+    document.querySelector('.tabbar').classList.toggle('four', on);
+    if (!on && state.view === 'bar') showView('catalog');
+  }
+
   // ---------- UI glue ----------
   let toastTimer;
   function toast(msg) {
@@ -391,6 +556,7 @@
     window.scrollTo(0, 0);
     state.view = name;
     if (name === 'favs') renderFavs();
+    if (name === 'bar') renderBar();
   }
   function findRec(id) { return state.records.find((r) => r.id === Number(id)); }
 
@@ -428,6 +594,15 @@
       }
       if (e.target.closest('#d-fav')) { if (state.current) toggleFav(state.current); return; }
       if (e.target.closest('#fav-go')) { showView('catalog'); return; }
+      const play = e.target.closest('[data-play]');
+      if (play) { markPlayed(play.dataset.play); return; }
+      const open = e.target.closest('.bar-open');
+      if (open) { const r = findRec(open.dataset.id); if (r) openSheet(r); return; }
+      const sl = e.target.closest('[data-slot]');
+      if (sl) { haptic(); bar.slot = sl.dataset.slot; bar.manual = sl.dataset.slot !== currentSlot().id; renderBar(); return; }
+      const cr = e.target.closest('[data-crowd]');
+      if (cr) { haptic(); bar.crowd = cr.dataset.crowd; store.set('crowd', bar.crowd); renderBar(); return; }
+      if (e.target.closest('#bar-reset')) { store.set(PLAYED_KEY, {}); renderBar(); return; }
       const mood = e.target.closest('.mood');
       if (mood) { haptic(); state.mood = mood.dataset.mood; renderMoods(); renderPick(); $('#pick-result').scrollIntoView({ behavior: 'smooth', block: 'start' }); return; }
       if (e.target.closest('#reroll')) { haptic(); renderPick(); }
@@ -456,6 +631,9 @@
       if (state.view === 'favs') renderFavs();
       if (state.view === 'pick') renderPick();
     });
+    if (store.get('isStaff', false)) enableStaff(true); // показать сразу, потом перепроверить
+    checkStaff().then(enableStaff);
+    setInterval(() => { if (state.view === 'bar' && !bar.manual) renderBar(); }, 60000);
     const start = tg && tg.initDataUnsafe && tg.initDataUnsafe.start_param;
     if (start === 'pick') showView('pick');
     if (start === 'favs') showView('favs');

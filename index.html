@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
@@ -70,6 +70,22 @@
         <button class="btn small" id="fav-go">Открыть каталог</button>
       </div>
     </section>
+
+    <!-- Бар: только для сотрудников -->
+    <section class="view" id="view-bar" hidden>
+      <header class="top">
+        <h1 class="h-big">Сейчас в баре</h1>
+        <p class="sub">Подсказка для барменов: что поставить под время и настроение зала.</p>
+      </header>
+      <div class="bar-now" id="bar-now"></div>
+      <div class="chips bar-slots" id="bar-slots" aria-label="Время"></div>
+      <div class="bar-crowd-row">
+        <span>В зале:</span>
+        <div class="seg" id="bar-crowd" role="group" aria-label="Загруженность зала"></div>
+      </div>
+      <div class="bar-list" id="bar-list"></div>
+      <p class="note bar-played" id="bar-played"></p>
+    </section>
   </div>
 
   <nav class="tabbar" aria-label="Разделы">
@@ -85,6 +101,10 @@
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>
       <span>Избранное</span>
       <i class="badge" id="fav-badge" hidden></i>
+    </button>
+    <button class="tab" data-view="bar" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6"/></svg>
+      <span>Бар</span>
     </button>
   </nav>
 
@@ -113,7 +133,7 @@
 
   <div class="toast" id="toast" role="status" hidden></div>
 
-  <script src="config.js?v=3"></script>
-  <script src="app.js?v=3"></script>
+  <script src="config.js?v=4"></script>
+  <script src="app.js?v=4"></script>
 </body>
 </html>
