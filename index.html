@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Винил бара</title>
+  <meta name="theme-color" content="#14110f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <div class="app">
+    <!-- Каталог -->
+    <section class="view" id="view-catalog">
+      <header class="top">
+        <div class="brand">
+          <span class="brand-disc" aria-hidden="true"></span>
+          <div>
+            <h1>Винил</h1>
+            <p class="sub" id="count-line">Загружаем пластинки…</p>
+          </div>
+        </div>
+        <label class="search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="q" type="search" placeholder="Исполнитель, альбом, жанр" autocomplete="off" enterkeyhint="search">
+        </label>
+        <div class="chips" id="shelf-chips" role="tablist" aria-label="Полки"></div>
+        <div class="filters">
+          <select id="f-decade" aria-label="Десятилетие"><option value="">Все годы</option></select>
+          <select id="f-tempo" aria-label="Темп">
+            <option value="">Любой темп</option>
+            <option value="slow">Медленно · до 95</option>
+            <option value="mid">Средне · 95–120</option>
+            <option value="fast">Быстро · 120+</option>
+          </select>
+          <select id="f-sort" aria-label="Сортировка">
+            <option value="shelf">По полкам</option>
+            <option value="year">По году</option>
+            <option value="artist">А–Я</option>
+          </select>
+        </div>
+      </header>
+      <div class="grid" id="grid"></div>
+      <p class="empty" id="empty" hidden>Ничего не нашлось. Попробуй убрать фильтры.</p>
+    </section>
+
+    <!-- Что поставить -->
+    <section class="view" id="view-pick" hidden>
+      <header class="top">
+        <h1 class="h-big">Что поставить?</h1>
+        <p class="sub">Выбери настроение, а мы подберём три пластинки с полок.</p>
+      </header>
+      <div class="moods" id="moods"></div>
+      <div id="pick-result"></div>
+    </section>
+
+    <!-- Избранное -->
+    <section class="view" id="view-favs" hidden>
+      <header class="top">
+        <h1 class="h-big">Избранное</h1>
+        <p class="sub" id="fav-sub"></p>
+      </header>
+      <div class="grid" id="fav-grid"></div>
+      <div class="fav-empty" id="fav-empty" hidden>
+        <div class="fav-empty-heart" aria-hidden="true">♡</div>
+        <p>Здесь будут пластинки, которые тебе понравились. Можно показать список бармену или вернуться к ним в следующий раз.</p>
+        <button class="btn small" id="fav-go">Открыть каталог</button>
+      </div>
+    </section>
+  </div>
+
+  <nav class="tabbar" aria-label="Разделы">
+    <button class="tab active" data-view="catalog">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+      <span>Каталог</span>
+    </button>
+    <button class="tab" data-view="pick">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.5"/><path d="M12 3v3M21 12h-3"/></svg>
+      <span>Что поставить</span>
+    </button>
+    <button class="tab" data-view="favs">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>
+      <span>Избранное</span>
+      <i class="badge" id="fav-badge" hidden></i>
+    </button>
+  </nav>
+
+  <!-- Карточка пластинки -->
+  <div class="sheet-wrap" id="sheet" hidden>
+    <div class="sheet-backdrop" data-close></div>
+    <article class="sheet" role="dialog" aria-modal="true" aria-labelledby="d-album">
+      <button class="sheet-close" data-close aria-label="Закрыть">✕</button>
+      <div class="d-cover" id="d-cover"></div>
+      <h2 id="d-album"></h2>
+      <p class="d-artist" id="d-artist"></p>
+      <dl class="d-meta" id="d-meta"></dl>
+      <div class="d-tags" id="d-tags"></div>
+
+      <button class="btn fav-btn" id="d-fav" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>
+        <span>В избранное</span>
+      </button>
+
+      <div id="d-similar-wrap" hidden>
+        <h3>Похожее на полках</h3>
+        <div class="row-scroll" id="d-similar"></div>
+      </div>
+    </article>
+  </div>
+
+  <div class="toast" id="toast" role="status" hidden></div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

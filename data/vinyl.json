@@ -1,0 +1,1602 @@
+[
+ {
+  "shelfNo": 1,
+  "n": 1,
+  "artist": "The Kinks",
+  "album": "Kinks (дебютный)",
+  "year": 1964,
+  "genre": "Mod Rock / British Invasion / R&B",
+  "bpm": "110–145",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 2,
+  "artist": "The Beatles",
+  "album": "A Hard Day's Night (OST)",
+  "year": 1964,
+  "genre": "Rock / Beat / Pop Rock",
+  "bpm": "120–145",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 3,
+  "artist": "Bob Dylan",
+  "album": "Highway 61 Revisited",
+  "year": 1965,
+  "genre": "Folk Rock / Blues Rock",
+  "bpm": "90–135",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 4,
+  "artist": "The Who",
+  "album": "My Generation",
+  "year": 1965,
+  "genre": "Mod Rock / British Invasion",
+  "bpm": "120–145",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 5,
+  "artist": "The Beatles",
+  "album": "Help! (сов. изд.)",
+  "year": 1965,
+  "genre": "Beat / Rock'n'Roll",
+  "bpm": "120–145",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 6,
+  "artist": "The Velvet Underground & Nico",
+  "album": "The Velvet Underground & Nico",
+  "year": 1967,
+  "genre": "Avant-garde Rock / Art Rock",
+  "bpm": "70–130",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 7,
+  "artist": "Jefferson Airplane",
+  "album": "Crown of Creation",
+  "year": 1968,
+  "genre": "Psychedelic Rock / Acid Rock",
+  "bpm": "90–130",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 8,
+  "artist": "The Beatles",
+  "album": "Abbey Road",
+  "year": 1969,
+  "genre": "Rock / Art Rock",
+  "bpm": "70–140",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 9,
+  "artist": "Black Sabbath",
+  "album": "Paranoid",
+  "year": 1970,
+  "genre": "Heavy Metal / Hard Rock",
+  "bpm": "70–160",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 10,
+  "artist": "The Mamas & The Papas",
+  "album": "Best of / Monday Monday",
+  "year": 1971,
+  "genre": "Folk Rock / Pop Rock",
+  "bpm": "90–120",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 11,
+  "artist": "The Kinks",
+  "album": "The Best of The Kinks",
+  "year": 1971,
+  "genre": "Mod Rock / British Invasion",
+  "bpm": "100–140",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 12,
+  "artist": "Led Zeppelin",
+  "album": "Led Zeppelin IV",
+  "year": 1971,
+  "genre": "Hard Rock / Heavy Metal / Folk Rock",
+  "bpm": "80–155",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 13,
+  "artist": "The Rolling Stones",
+  "album": "Big Hits Vol. 2",
+  "year": 1972,
+  "genre": "Rock / Hard Rock",
+  "bpm": "100–140",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 14,
+  "artist": "Creedence Clearwater Revival",
+  "album": "Creedence Gold",
+  "year": 1972,
+  "genre": "Rock / Blues Rock / Country Rock",
+  "bpm": "100–135",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 15,
+  "artist": "Deep Purple",
+  "album": "Machine Head",
+  "year": 1972,
+  "genre": "Hard Rock / Heavy Metal",
+  "bpm": "100–150",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 16,
+  "artist": "David Bowie",
+  "album": "The Rise and Fall of Ziggy Stardust",
+  "year": 1972,
+  "genre": "Glam Rock / Art Rock",
+  "bpm": "90–140",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 17,
+  "artist": "Pink Floyd",
+  "album": "The Dark Side of the Moon",
+  "year": 1973,
+  "genre": "Progressive Rock / Psychedelic Rock",
+  "bpm": "60–120",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 18,
+  "artist": "The Who",
+  "album": "The Best of The Last Ten Years '64–'74",
+  "year": 1974,
+  "genre": "Rock / Mod Rock",
+  "bpm": "110–145",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 19,
+  "artist": "Jimi Hendrix",
+  "album": "The Best of Jimi Hendrix",
+  "year": 1975,
+  "genre": "Psychedelic Rock / Blues Rock",
+  "bpm": "80–130",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 20,
+  "artist": "Rolling Stones",
+  "album": "Made in the Shade",
+  "year": 1975,
+  "genre": "Rock / Hard Rock",
+  "bpm": "100–140",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 21,
+  "artist": "Queen",
+  "album": "A Night at the Opera",
+  "year": 1975,
+  "genre": "Rock / Progressive Rock / Art Rock",
+  "bpm": "70–175",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 22,
+  "artist": "Pink Floyd",
+  "album": "Wish You Were Here",
+  "year": 1975,
+  "genre": "Progressive Rock / Psychedelic",
+  "bpm": "60–130",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 23,
+  "artist": "Queen",
+  "album": "A Day at the Races",
+  "year": 1976,
+  "genre": "Rock / Progressive Rock",
+  "bpm": "80–145",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 24,
+  "artist": "The Troggs",
+  "album": "Greatest Hits",
+  "year": 1976,
+  "genre": "Garage Rock / Mod Rock",
+  "bpm": "120–140",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 25,
+  "artist": "ELO",
+  "album": "A New World Record",
+  "year": 1976,
+  "genre": "Art Rock / Pop Rock / Symphonic Rock",
+  "bpm": "95–130",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 26,
+  "artist": "Iggy Pop",
+  "album": "Lust for Life",
+  "year": 1977,
+  "genre": "Punk Rock / Proto-punk",
+  "bpm": "100–130",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 27,
+  "artist": "Smokie",
+  "album": "Bright Lights & Back Alleys",
+  "year": 1977,
+  "genre": "Soft Rock / Pop Rock",
+  "bpm": "100–120",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 28,
+  "artist": "Small Faces",
+  "album": "Greatest Hits",
+  "year": 1977,
+  "genre": "Mod Rock / Psychedelic Rock",
+  "bpm": "110–140",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 29,
+  "artist": "Pink Floyd",
+  "album": "Animals",
+  "year": 1977,
+  "genre": "Progressive Rock / Art Rock",
+  "bpm": "65–120",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 30,
+  "artist": "Wings (Paul McCartney)",
+  "album": "London Town",
+  "year": 1978,
+  "genre": "Pop Rock / Soft Rock",
+  "bpm": "90–120",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 31,
+  "artist": "Bob Dylan",
+  "album": "Street Legal",
+  "year": 1978,
+  "genre": "Rock / Folk Rock",
+  "bpm": "80–120",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 32,
+  "artist": "Japan",
+  "album": "Adolescent Sex",
+  "year": 1978,
+  "genre": "Glam Rock / New Wave",
+  "bpm": "110–130",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 33,
+  "artist": "Pink Floyd",
+  "album": "The Wall",
+  "year": 1979,
+  "genre": "Progressive Rock / Art Rock",
+  "bpm": "60–130",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 34,
+  "artist": "ELO",
+  "album": "ELO's Greatest Hits",
+  "year": 1979,
+  "genre": "Art Rock / Pop Rock / Symphonic Rock",
+  "bpm": "95–130",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 35,
+  "artist": "ELO",
+  "album": "Discovery",
+  "year": 1979,
+  "genre": "Art Rock / Pop Rock / Disco-Rock",
+  "bpm": "100–125",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 36,
+  "artist": "Queen",
+  "album": "Greatest Hits",
+  "year": 1981,
+  "genre": "Rock / Arena Rock",
+  "bpm": "90–150",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 37,
+  "artist": "The Doors",
+  "album": "Alive, She Cried",
+  "year": 1983,
+  "genre": "Psychedelic Rock / Blues Rock (Live)",
+  "bpm": "80–130",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 38,
+  "artist": "Pink Floyd",
+  "album": "Delicate Sound of Thunder",
+  "year": 1988,
+  "genre": "Progressive Rock (Live)",
+  "bpm": "60–130",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 39,
+  "artist": "Pixies",
+  "album": "Bossanova",
+  "year": 1990,
+  "genre": "Alternative Rock / Indie Rock",
+  "bpm": "100–150",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 40,
+  "artist": "Queen",
+  "album": "Greatest Hits II",
+  "year": 1991,
+  "genre": "Rock / Arena Rock",
+  "bpm": "90–150",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 41,
+  "artist": "Nirvana",
+  "album": "Nevermind",
+  "year": 1991,
+  "genre": "Grunge / Alt. Rock",
+  "bpm": "90–130",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 42,
+  "artist": "АукцЫон",
+  "album": "Юла",
+  "year": 1991,
+  "genre": "Авангардный рок / Арт-рок",
+  "bpm": "90–130",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 43,
+  "artist": "АукцЫон",
+  "album": "Птица",
+  "year": 1993,
+  "genre": "Авангардный рок / Арт-рок",
+  "bpm": "90–130",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 44,
+  "artist": "Nirvana",
+  "album": "MTV Unplugged in New York",
+  "year": 1994,
+  "genre": "Acoustic Rock / Grunge",
+  "bpm": "60–120",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 45,
+  "artist": "Oasis",
+  "album": "Definitely Maybe",
+  "year": 1994,
+  "genre": "Britpop / Alt. Rock",
+  "bpm": "95–130",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 46,
+  "artist": "Fatboy Slim",
+  "album": "Back to Mine",
+  "year": 2001,
+  "genre": "Downtempo / Chill-out / Big Beat",
+  "bpm": "85–100",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 47,
+  "artist": "Gorillaz",
+  "album": "Gorillaz (s/t)",
+  "year": 2001,
+  "genre": "Alternative Hip-Hop / Britpop",
+  "bpm": "85–100",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 48,
+  "artist": "Green Day",
+  "album": "American Idiot",
+  "year": 2004,
+  "genre": "Punk Rock / Pop-Punk",
+  "bpm": "150–190",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 49,
+  "artist": "Kasabian",
+  "album": "Kasabian (s/t)",
+  "year": 2004,
+  "genre": "Indie Rock / Britrock",
+  "bpm": "110–130",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 50,
+  "artist": "Distemper",
+  "album": "Best of Brass Time",
+  "year": 2005,
+  "genre": "Ska-Punk / Brass Punk",
+  "bpm": "150–180",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 51,
+  "artist": "Osipenko",
+  "album": "Bus Stop (EP)",
+  "year": 2010,
+  "genre": "Lo-fi Soul / Indie R&B",
+  "bpm": "75–90",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 52,
+  "artist": "The Black Keys",
+  "album": "El Camino",
+  "year": 2011,
+  "genre": "Blues Rock / Garage Rock",
+  "bpm": "115–135",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 53,
+  "artist": "Imagine Dragons",
+  "album": "Night Visions",
+  "year": 2012,
+  "genre": "Indie Pop / Arena Rock",
+  "bpm": "100–140",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 54,
+  "artist": "Bring Me The Horizon",
+  "album": "Sempiternal",
+  "year": 2013,
+  "genre": "Metalcore / Post-Hardcore",
+  "bpm": "130–170",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 55,
+  "artist": "David Bowie",
+  "album": "Legacy",
+  "year": 2016,
+  "genre": "Glam Rock / Art Rock / Pop",
+  "bpm": "70–130",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 56,
+  "artist": "Snail Mail",
+  "album": "Habit",
+  "year": 2016,
+  "genre": "Indie Rock / Lo-fi",
+  "bpm": "80–110",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 57,
+  "artist": "Nothing But Thieves",
+  "album": "Broken Machine",
+  "year": 2017,
+  "genre": "Alt. Rock / Indie Rock",
+  "bpm": "100–130",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 58,
+  "artist": "Sting",
+  "album": "My Songs",
+  "year": 2019,
+  "genre": "Pop Rock / AOR",
+  "bpm": "90–120",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 59,
+  "artist": "Marea/Tide",
+  "album": "Sound and Image Research Vol.1",
+  "year": 2019,
+  "genre": "Ambient / Experimental / New Age",
+  "bpm": "70–85",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 1,
+  "n": 60,
+  "artist": "Kings of Leon",
+  "album": "уточнить название",
+  "year": null,
+  "genre": "Alternative Rock / Indie Rock",
+  "bpm": "100–130",
+  "shelf": "Classic Rock / British Invasion"
+ },
+ {
+  "shelfNo": 2,
+  "n": 1,
+  "artist": "The Rolling Stones",
+  "album": "Big Hits (High Tide and Green Grass)",
+  "year": 1966,
+  "genre": "Rock / R&B",
+  "bpm": "100–140",
+  "shelf": "Funk / Soul / Disco"
+ },
+ {
+  "shelfNo": 2,
+  "n": 2,
+  "artist": "Various Artists",
+  "album": "Hits & Soul Vol. 3",
+  "year": 1968,
+  "genre": "Soul / R&B",
+  "bpm": "90–120",
+  "shelf": "Funk / Soul / Disco"
+ },
+ {
+  "shelfNo": 2,
+  "n": 3,
+  "artist": "James Brown",
+  "album": "Sex Machine Today",
+  "year": 1975,
+  "genre": "Funk / Disco Soul",
+  "bpm": "105–125",
+  "shelf": "Funk / Soul / Disco"
+ },
+ {
+  "shelfNo": 2,
+  "n": 4,
+  "artist": "George Benson",
+  "album": "In Flight",
+  "year": 1977,
+  "genre": "Jazz Fusion / Smooth Jazz / R&B",
+  "bpm": "80–110",
+  "shelf": "Funk / Soul / Disco"
+ },
+ {
+  "shelfNo": 2,
+  "n": 5,
+  "artist": "Donna Summer",
+  "album": "Greatest Hits",
+  "year": 1977,
+  "genre": "Disco",
+  "bpm": "120–135",
+  "shelf": "Funk / Soul / Disco"
+ },
+ {
+  "shelfNo": 2,
+  "n": 6,
+  "artist": "Chic",
+  "album": "Chic",
+  "year": 1977,
+  "genre": "Disco / Funk",
+  "bpm": "115–125",
+  "shelf": "Funk / Soul / Disco"
+ },
+ {
+  "shelfNo": 2,
+  "n": 7,
+  "artist": "Various Artists",
+  "album": "Thank God It's Friday (OST)",
+  "year": 1978,
+  "genre": "Disco",
+  "bpm": "120–135",
+  "shelf": "Funk / Soul / Disco"
+ },
+ {
+  "shelfNo": 2,
+  "n": 8,
+  "artist": "Commodores",
+  "album": "Greatest Hits",
+  "year": 1978,
+  "genre": "Funk / R&B / Soul",
+  "bpm": "90–115",
+  "shelf": "Funk / Soul / Disco"
+ },
+ {
+  "shelfNo": 2,
+  "n": 9,
+  "artist": "Earth, Wind & Fire",
+  "album": "Raise!",
+  "year": 1981,
+  "genre": "Funk / Soul / R&B",
+  "bpm": "100–120",
+  "shelf": "Funk / Soul / Disco"
+ },
+ {
+  "shelfNo": 2,
+  "n": 10,
+  "artist": "Marvin Gaye",
+  "album": "Midnight Love",
+  "year": 1982,
+  "genre": "R&B / Soul / Funk",
+  "bpm": "90–105",
+  "shelf": "Funk / Soul / Disco"
+ },
+ {
+  "shelfNo": 2,
+  "n": 11,
+  "artist": "Petra Janů",
+  "album": "Já My",
+  "year": 1982,
+  "genre": "Чешский поп / Disco",
+  "bpm": "110–120",
+  "shelf": "Funk / Soul / Disco"
+ },
+ {
+  "shelfNo": 2,
+  "n": 12,
+  "artist": "Tight Fit",
+  "album": "Tight Fit (Balkanton)",
+  "year": 1983,
+  "genre": "Eurodisco / Synth-Pop",
+  "bpm": "115–125",
+  "shelf": "Funk / Soul / Disco"
+ },
+ {
+  "shelfNo": 2,
+  "n": 13,
+  "artist": "Stevie Wonder",
+  "album": "The Woman in Red (OST)",
+  "year": 1984,
+  "genre": "R&B / Soul / Pop",
+  "bpm": "80–110",
+  "shelf": "Funk / Soul / Disco"
+ },
+ {
+  "shelfNo": 2,
+  "n": 14,
+  "artist": "Whitney Houston",
+  "album": "Whitney Houston",
+  "year": 1985,
+  "genre": "Pop / R&B / Soul",
+  "bpm": "90–115",
+  "shelf": "Funk / Soul / Disco"
+ },
+ {
+  "shelfNo": 2,
+  "n": 15,
+  "artist": "Red Hot Chili Peppers",
+  "album": "Californication",
+  "year": 1999,
+  "genre": "Alt. Rock / Funk Rock",
+  "bpm": "90–130",
+  "shelf": "Funk / Soul / Disco"
+ },
+ {
+  "shelfNo": 2,
+  "n": 16,
+  "artist": "Am Kinem",
+  "album": "Mavi Soul Part 1",
+  "year": 2015,
+  "genre": "Abstract House / Deep House",
+  "bpm": "120–128",
+  "shelf": "Funk / Soul / Disco"
+ },
+ {
+  "shelfNo": 2,
+  "n": 17,
+  "artist": "Black Pumas",
+  "album": "Black Pumas",
+  "year": 2019,
+  "genre": "Neo-Soul / Psychedelic Soul",
+  "bpm": "80–105",
+  "shelf": "Funk / Soul / Disco"
+ },
+ {
+  "shelfNo": 2,
+  "n": 18,
+  "artist": "Belpaese",
+  "album": "Belpaese 06 (12\")",
+  "year": 2019,
+  "genre": "Italo Funk / Balearic / Disco Edits",
+  "bpm": "110–125",
+  "shelf": "Funk / Soul / Disco"
+ },
+ {
+  "shelfNo": 2,
+  "n": 19,
+  "artist": "Tyler, the Creator",
+  "album": "Igor",
+  "year": 2019,
+  "genre": "Neo-Soul / Art Pop / Hip-Hop",
+  "bpm": "75–95",
+  "shelf": "Funk / Soul / Disco"
+ },
+ {
+  "shelfNo": 2,
+  "n": 20,
+  "artist": "Geju",
+  "album": "Edits",
+  "year": 2020,
+  "genre": "House / Disco Edits",
+  "bpm": "118–125",
+  "shelf": "Funk / Soul / Disco"
+ },
+ {
+  "shelfNo": 2,
+  "n": 21,
+  "artist": "Mac Miller",
+  "album": "Swimming in Circles",
+  "year": 2021,
+  "genre": "Hip-Hop / Neo-Soul",
+  "bpm": "70–95",
+  "shelf": "Funk / Soul / Disco"
+ },
+ {
+  "shelfNo": 2,
+  "n": 22,
+  "artist": "Tyler, the Creator",
+  "album": "Call Me If You Get Lost",
+  "year": 2021,
+  "genre": "Hip-Hop / Neo-Soul / Rap",
+  "bpm": "80–100",
+  "shelf": "Funk / Soul / Disco"
+ },
+ {
+  "shelfNo": 2,
+  "n": 23,
+  "artist": "Laurent Bardainne & Tigre d'Eau Douce",
+  "album": "Love Is Everywhere",
+  "year": 2022,
+  "genre": "Soul Jazz / Jazz Fusion",
+  "bpm": "90–115",
+  "shelf": "Funk / Soul / Disco"
+ },
+ {
+  "shelfNo": 2,
+  "n": 24,
+  "artist": "Bigsby × Nobody Knows × Porto Banda",
+  "album": "Bee Gin",
+  "year": 2023,
+  "genre": "Jazz / Funk / Live",
+  "bpm": "90–115",
+  "shelf": "Funk / Soul / Disco"
+ },
+ {
+  "shelfNo": 2,
+  "n": 25,
+  "artist": "Gorillaz",
+  "album": "Cracker Island",
+  "year": 2023,
+  "genre": "Art Pop / Psychedelic Funk",
+  "bpm": "95–110",
+  "shelf": "Funk / Soul / Disco"
+ },
+ {
+  "shelfNo": 2,
+  "n": 26,
+  "artist": "Lay-Far",
+  "album": "Tears of Listening Vol. 3",
+  "year": 2025,
+  "genre": "Brazilian Soul / Deep House / Dance",
+  "bpm": "110–125",
+  "shelf": "Funk / Soul / Disco"
+ },
+ {
+  "shelfNo": 2,
+  "n": 27,
+  "artist": "Justin Bieber",
+  "album": "SWAG",
+  "year": 2025,
+  "genre": "R&B / Synth-Pop",
+  "bpm": "80–105",
+  "shelf": "Funk / Soul / Disco"
+ },
+ {
+  "shelfNo": 2,
+  "n": 28,
+  "artist": "Ye (Kanye West)",
+  "album": "Bully",
+  "year": 2026,
+  "genre": "Alt. Hip-Hop / Industrial Rap / Neo-Soul",
+  "bpm": "75–95",
+  "shelf": "Funk / Soul / Disco"
+ },
+ {
+  "shelfNo": 2,
+  "n": 29,
+  "artist": "Ray Charles",
+  "album": "Let the Good Times Roll",
+  "year": null,
+  "genre": "R&B / Soul / Blues",
+  "bpm": "80–120",
+  "shelf": "Funk / Soul / Disco"
+ },
+ {
+  "shelfNo": 3,
+  "n": 1,
+  "artist": "Serge Gainsbourg",
+  "album": "Mauvaises Nouvelles des Étoiles",
+  "year": 1981,
+  "genre": "French Pop / Reggae / Avant-garde",
+  "bpm": "80–100",
+  "shelf": "Art Rock / Prog / Experimental"
+ },
+ {
+  "shelfNo": 3,
+  "n": 2,
+  "artist": "Midori Takada",
+  "album": "Through the Looking Glass",
+  "year": 1983,
+  "genre": "Minimalism / Percussive / Ambient",
+  "bpm": "60–100",
+  "shelf": "Art Rock / Prog / Experimental"
+ },
+ {
+  "shelfNo": 3,
+  "n": 3,
+  "artist": "Bryan Ferry",
+  "album": "Boys and Girls",
+  "year": 1985,
+  "genre": "Art Pop / Synth-Pop / New Wave",
+  "bpm": "90–115",
+  "shelf": "Art Rock / Prog / Experimental"
+ },
+ {
+  "shelfNo": 3,
+  "n": 4,
+  "artist": "Tom Waits",
+  "album": "Orphans: Bawlers",
+  "year": 2006,
+  "genre": "Blues / Folk / Singer-Songwriter",
+  "bpm": "60–100",
+  "shelf": "Art Rock / Prog / Experimental"
+ },
+ {
+  "shelfNo": 3,
+  "n": 5,
+  "artist": "Alva Noto + Ryuichi Sakamoto",
+  "album": "utp_",
+  "year": 2008,
+  "genre": "Electroacoustic / Ambient / Contemporary",
+  "bpm": "60–90",
+  "shelf": "Art Rock / Prog / Experimental"
+ },
+ {
+  "shelfNo": 3,
+  "n": 6,
+  "artist": "White Pain",
+  "album": "Paroles Absurdes",
+  "year": 2015,
+  "genre": "Indie / Shoegaze / Dark Pop",
+  "bpm": "75–110",
+  "shelf": "Art Rock / Prog / Experimental"
+ },
+ {
+  "shelfNo": 3,
+  "n": 7,
+  "artist": "Various Artists",
+  "album": "Music for Dance & Theatre Vol. 1",
+  "year": 2022,
+  "genre": "Contemporary / Experimental",
+  "bpm": "80–115",
+  "shelf": "Art Rock / Prog / Experimental"
+ },
+ {
+  "shelfNo": 4,
+  "n": 1,
+  "artist": "Боббисокс",
+  "album": "Боббисокс",
+  "year": 1985,
+  "genre": "Scandinavian Pop / Eurodance",
+  "bpm": "110–125",
+  "shelf": "Synth-Pop / New Wave / Dance"
+ },
+ {
+  "shelfNo": 4,
+  "n": 2,
+  "artist": "Duo Katz (Дуэт Кац)",
+  "album": "Дуэт Кац",
+  "year": 1986,
+  "genre": "Pop / Synth-Pop (изд. Мелодия)",
+  "bpm": "100–120",
+  "shelf": "Synth-Pop / New Wave / Dance"
+ },
+ {
+  "shelfNo": 4,
+  "n": 3,
+  "artist": "Berlin",
+  "album": "Count Three & Pray",
+  "year": 1986,
+  "genre": "New Wave / Synth-Pop",
+  "bpm": "100–120",
+  "shelf": "Synth-Pop / New Wave / Dance"
+ },
+ {
+  "shelfNo": 4,
+  "n": 4,
+  "artist": "Bananarama",
+  "album": "Love in the First Degree (сингл)",
+  "year": 1987,
+  "genre": "Eurobeat / Pop / Dance",
+  "bpm": "120–135",
+  "shelf": "Synth-Pop / New Wave / Dance"
+ },
+ {
+  "shelfNo": 4,
+  "n": 5,
+  "artist": "Depeche Mode",
+  "album": "Violator",
+  "year": 1990,
+  "genre": "Synth-Pop / Electronic",
+  "bpm": "105–120",
+  "shelf": "Synth-Pop / New Wave / Dance"
+ },
+ {
+  "shelfNo": 4,
+  "n": 6,
+  "artist": "Aphex Twin",
+  "album": "I Care Because You Do",
+  "year": 1995,
+  "genre": "IDM / Electronic / Ambient Techno",
+  "bpm": "100–165",
+  "shelf": "Synth-Pop / New Wave / Dance"
+ },
+ {
+  "shelfNo": 4,
+  "n": 7,
+  "artist": "Duran Duran",
+  "album": "Greatest",
+  "year": 1998,
+  "genre": "New Wave / Synth-Pop (сборник)",
+  "bpm": "110–130",
+  "shelf": "Synth-Pop / New Wave / Dance"
+ },
+ {
+  "shelfNo": 4,
+  "n": 8,
+  "artist": "Timeisnow",
+  "album": "TIN053 (12\")",
+  "year": 2000,
+  "genre": "UK Garage / House",
+  "bpm": "125–130",
+  "shelf": "Synth-Pop / New Wave / Dance"
+ },
+ {
+  "shelfNo": 4,
+  "n": 9,
+  "artist": "Kylie Minogue",
+  "album": "Fever",
+  "year": 2001,
+  "genre": "Dance-Pop / Electropop",
+  "bpm": "120–135",
+  "shelf": "Synth-Pop / New Wave / Dance"
+ },
+ {
+  "shelfNo": 4,
+  "n": 10,
+  "artist": "Meg",
+  "album": "MGRMX",
+  "year": 2005,
+  "genre": "Electronic / Deep House / Techno",
+  "bpm": "120–135",
+  "shelf": "Synth-Pop / New Wave / Dance"
+ },
+ {
+  "shelfNo": 4,
+  "n": 11,
+  "artist": "DJ Smash",
+  "album": "Smashworld",
+  "year": 2010,
+  "genre": "Electronic / Big Room / EDM",
+  "bpm": "125–135",
+  "shelf": "Synth-Pop / New Wave / Dance"
+ },
+ {
+  "shelfNo": 4,
+  "n": 12,
+  "artist": "Insanlar",
+  "album": "Kime Ne (Villalobos Remix, 12\")",
+  "year": 2010,
+  "genre": "Minimal Techno / Deep House",
+  "bpm": "120–128",
+  "shelf": "Synth-Pop / New Wave / Dance"
+ },
+ {
+  "shelfNo": 4,
+  "n": 13,
+  "artist": "Mace",
+  "album": "Almost There I (ATTIC 004, 12\")",
+  "year": 2015,
+  "genre": "Electronic / Ambient / Techno",
+  "bpm": "110–125",
+  "shelf": "Synth-Pop / New Wave / Dance"
+ },
+ {
+  "shelfNo": 4,
+  "n": 14,
+  "artist": "Tame Impala",
+  "album": "Currents",
+  "year": 2015,
+  "genre": "Psychedelic Pop / Synth-Pop",
+  "bpm": "95–120",
+  "shelf": "Synth-Pop / New Wave / Dance"
+ },
+ {
+  "shelfNo": 4,
+  "n": 15,
+  "artist": "The xx",
+  "album": "I See You",
+  "year": 2017,
+  "genre": "Indie Pop / Dream Pop / Electronic",
+  "bpm": "90–115",
+  "shelf": "Synth-Pop / New Wave / Dance"
+ },
+ {
+  "shelfNo": 4,
+  "n": 16,
+  "artist": "Bicep",
+  "album": "Bicep",
+  "year": 2017,
+  "genre": "Electronic / House / IDM",
+  "bpm": "120–130",
+  "shelf": "Synth-Pop / New Wave / Dance"
+ },
+ {
+  "shelfNo": 4,
+  "n": 17,
+  "artist": "Future Islands",
+  "album": "As Long As You Are",
+  "year": 2020,
+  "genre": "Synth-Pop / Alternative",
+  "bpm": "100–120",
+  "shelf": "Synth-Pop / New Wave / Dance"
+ },
+ {
+  "shelfNo": 4,
+  "n": 18,
+  "artist": "Low Island",
+  "album": "Don't Let the Light In (Villalobos Remix)",
+  "year": 2020,
+  "genre": "Deep Techno / Minimal",
+  "bpm": "120–128",
+  "shelf": "Synth-Pop / New Wave / Dance"
+ },
+ {
+  "shelfNo": 4,
+  "n": 19,
+  "artist": "Yu Su",
+  "album": "Yellow River Blue",
+  "year": 2021,
+  "genre": "Electronic / Ambient / Dance",
+  "bpm": "110–125",
+  "shelf": "Synth-Pop / New Wave / Dance"
+ },
+ {
+  "shelfNo": 4,
+  "n": 20,
+  "artist": "Garrett",
+  "album": "Private Life III",
+  "year": 2022,
+  "genre": "Ambient / Electronica (Music From Memory)",
+  "bpm": "80–110",
+  "shelf": "Synth-Pop / New Wave / Dance"
+ },
+ {
+  "shelfNo": 4,
+  "n": 21,
+  "artist": "DJ Greg",
+  "album": "Tears of Listening Vol. 2",
+  "year": 2024,
+  "genre": "Dance / Deep House / Balearic",
+  "bpm": "115–125",
+  "shelf": "Synth-Pop / New Wave / Dance"
+ },
+ {
+  "shelfNo": 4,
+  "n": 22,
+  "artist": "Future Islands",
+  "album": "уточнить название",
+  "year": null,
+  "genre": "Synth-Pop / Alternative",
+  "bpm": "100–120",
+  "shelf": "Synth-Pop / New Wave / Dance"
+ },
+ {
+  "shelfNo": 4,
+  "n": 23,
+  "artist": "?",
+  "album": "Cosmic Surfin' (уточнить)",
+  "year": null,
+  "genre": "Balearic / Electronic?",
+  "bpm": "—",
+  "shelf": "Synth-Pop / New Wave / Dance"
+ },
+ {
+  "shelfNo": 4,
+  "n": 24,
+  "artist": "?",
+  "album": "MM label (уточнить)",
+  "year": null,
+  "genre": "Electronic / Ambient?",
+  "bpm": "—",
+  "shelf": "Synth-Pop / New Wave / Dance"
+ },
+ {
+  "shelfNo": 5,
+  "n": 1,
+  "artist": "Akira Ishikawa",
+  "album": "Back to Rhythm",
+  "year": 1976,
+  "genre": "Jazz Fusion / Afrobeat / Percussion",
+  "bpm": "100–130",
+  "shelf": "Japanese Music"
+ },
+ {
+  "shelfNo": 5,
+  "n": 2,
+  "artist": "Keiichi Suzuki & Moon Riders",
+  "album": "火の玉ボーイ",
+  "year": 1976,
+  "genre": "Japanese Rock / City Pop",
+  "bpm": "90–120",
+  "shelf": "Japanese Music"
+ },
+ {
+  "shelfNo": 5,
+  "n": 3,
+  "artist": "Toto",
+  "album": "Toto IV (японское издание)",
+  "year": 1982,
+  "genre": "AOR / Pop Rock / Soft Rock",
+  "bpm": "90–120",
+  "shelf": "Japanese Music"
+ },
+ {
+  "shelfNo": 5,
+  "n": 4,
+  "artist": "Bill Conti",
+  "album": "Rocky III OST (японское издание)",
+  "year": 1982,
+  "genre": "Film Score / Funk / Rock",
+  "bpm": "100–135",
+  "shelf": "Japanese Music"
+ },
+ {
+  "shelfNo": 5,
+  "n": 5,
+  "artist": "Katsuo Ohno",
+  "album": "太陽にほえろ! OST Collection 1972–1983",
+  "year": 1983,
+  "genre": "Japanese Film Score / Funk",
+  "bpm": "90–120",
+  "shelf": "Japanese Music"
+ },
+ {
+  "shelfNo": 5,
+  "n": 6,
+  "artist": "Miki Matsubara",
+  "album": "Who Are You?",
+  "year": 1983,
+  "genre": "City Pop / J-Pop",
+  "bpm": "95–115",
+  "shelf": "Japanese Music"
+ },
+ {
+  "shelfNo": 5,
+  "n": 7,
+  "artist": "Kazuhiko Katoh",
+  "album": "Papa Hemingway",
+  "year": 1983,
+  "genre": "City Pop / J-Pop",
+  "bpm": "90–105",
+  "shelf": "Japanese Music"
+ },
+ {
+  "shelfNo": 5,
+  "n": 8,
+  "artist": "Kazuhiko Katoh",
+  "album": "Papa Hemingway",
+  "year": 1983,
+  "genre": "City Pop / J-Pop",
+  "bpm": "90–105",
+  "shelf": "Japanese Music"
+ },
+ {
+  "shelfNo": 5,
+  "n": 9,
+  "artist": "Takeshi Itoh",
+  "album": "Dear Hearts",
+  "year": 1985,
+  "genre": "City Pop / J-Pop",
+  "bpm": "85–110",
+  "shelf": "Japanese Music"
+ },
+ {
+  "shelfNo": 5,
+  "n": 10,
+  "artist": "Miki Matsubara",
+  "album": "Lady Bounce",
+  "year": 1985,
+  "genre": "City Pop / J-Pop",
+  "bpm": "95–115",
+  "shelf": "Japanese Music"
+ },
+ {
+  "shelfNo": 5,
+  "n": 11,
+  "artist": "Naked Artz",
+  "album": "漫透 (Penetration)",
+  "year": 1998,
+  "genre": "Japanese Hip-Hop",
+  "bpm": "85–100",
+  "shelf": "Japanese Music"
+ },
+ {
+  "shelfNo": 5,
+  "n": 12,
+  "artist": "Hill the IQ & DJ Kousuke",
+  "album": "放火魔 (Hōkama)",
+  "year": 2000,
+  "genre": "Japanese Hip-Hop",
+  "bpm": "85–100",
+  "shelf": "Japanese Music"
+ },
+ {
+  "shelfNo": 5,
+  "n": 13,
+  "artist": "Mellow Yellow",
+  "album": "V.S.O.P. Part II",
+  "year": 2000,
+  "genre": "Japanese Hip-Hop / Neo-Soul",
+  "bpm": "85–105",
+  "shelf": "Japanese Music"
+ },
+ {
+  "shelfNo": 5,
+  "n": 14,
+  "artist": "Dragon Ash",
+  "album": "Summer Tribe (сингл)",
+  "year": 2000,
+  "genre": "J-Hip-Hop / Reggae / Nu-Metal",
+  "bpm": "90–100",
+  "shelf": "Japanese Music"
+ },
+ {
+  "shelfNo": 5,
+  "n": 15,
+  "artist": "KOO",
+  "album": "Brothers of Rising Funk",
+  "year": 2003,
+  "genre": "Japanese Hip-Hop / Funk",
+  "bpm": "90–105",
+  "shelf": "Japanese Music"
+ },
+ {
+  "shelfNo": 5,
+  "n": 16,
+  "artist": "BLACKPINK",
+  "album": "BLACKPINK (s/t)",
+  "year": 2020,
+  "genre": "K-Pop",
+  "bpm": "95–125",
+  "shelf": "Japanese Music"
+ },
+ {
+  "shelfNo": 5,
+  "n": 17,
+  "artist": "Yukawa Shione",
+  "album": "10の足跡",
+  "year": 2023,
+  "genre": "Japanese Folk / Singer-Songwriter",
+  "bpm": "70–95",
+  "shelf": "Japanese Music"
+ },
+ {
+  "shelfNo": 5,
+  "n": 18,
+  "artist": "Nelson Super Project",
+  "album": "Nelson Magic Analog Edition",
+  "year": 2025,
+  "genre": "J-Pop / City Pop",
+  "bpm": "90–115",
+  "shelf": "Japanese Music"
+ },
+ {
+  "shelfNo": 6,
+  "n": 1,
+  "artist": "Михей и Джуманджи",
+  "album": "Сука Любовь",
+  "year": 1997,
+  "genre": "Русский хип-хоп / Рэп",
+  "bpm": "85–100",
+  "shelf": "Hip-Hop / Neo-Soul"
+ },
+ {
+  "shelfNo": 6,
+  "n": 2,
+  "artist": "Gorillaz",
+  "album": "Demon Days",
+  "year": 2005,
+  "genre": "Alternative Hip-Hop / Trip-Hop",
+  "bpm": "85–95",
+  "shelf": "Hip-Hop / Neo-Soul"
+ },
+ {
+  "shelfNo": 6,
+  "n": 3,
+  "artist": "The Notorious B.I.G.",
+  "album": "Greatest Hits",
+  "year": 2007,
+  "genre": "East Coast Hip-Hop",
+  "bpm": "85–100",
+  "shelf": "Hip-Hop / Neo-Soul"
+ },
+ {
+  "shelfNo": 6,
+  "n": 4,
+  "artist": "Beastie Boys",
+  "album": "Music (сборник)",
+  "year": 2020,
+  "genre": "Hip-Hop / Alternative Rap",
+  "bpm": "90–105",
+  "shelf": "Hip-Hop / Neo-Soul"
+ },
+ {
+  "shelfNo": 6,
+  "n": 5,
+  "artist": "Ye (Kanye West)",
+  "album": "Donda",
+  "year": 2021,
+  "genre": "Hip-Hop / Gospel / Experimental",
+  "bpm": "70–95",
+  "shelf": "Hip-Hop / Neo-Soul"
+ },
+ {
+  "shelfNo": 6,
+  "n": 6,
+  "artist": "Cypress Hill",
+  "album": "Back in Black",
+  "year": 2022,
+  "genre": "Hip-Hop / West Coast Rap",
+  "bpm": "85–95",
+  "shelf": "Hip-Hop / Neo-Soul"
+ },
+ {
+  "shelfNo": 7,
+  "n": 1,
+  "artist": "Trio Los Panchos",
+  "album": "Latin Hits Vol.1",
+  "year": 1970,
+  "genre": "Latin Pop / Bolero",
+  "bpm": "80–110",
+  "shelf": "Jazz / World / Chanson"
+ },
+ {
+  "shelfNo": 7,
+  "n": 2,
+  "artist": "Dave Brubeck",
+  "album": "Star Collection",
+  "year": 1972,
+  "genre": "Jazz / Cool Jazz",
+  "bpm": "150–175",
+  "shelf": "Jazz / World / Chanson"
+ },
+ {
+  "shelfNo": 7,
+  "n": 3,
+  "artist": "Ingrid Steeger",
+  "album": "Singt Klimbim",
+  "year": 1975,
+  "genre": "Немецкий поп / Schlager",
+  "bpm": "100–115",
+  "shelf": "Jazz / World / Chanson"
+ },
+ {
+  "shelfNo": 7,
+  "n": 4,
+  "artist": "Paco de Lucia",
+  "album": "Андалузские мелодии",
+  "year": 1975,
+  "genre": "Фламенко / Классическая гитара",
+  "bpm": "80–140",
+  "shelf": "Jazz / World / Chanson"
+ },
+ {
+  "shelfNo": 7,
+  "n": 5,
+  "artist": "Charlie Mariano",
+  "album": "Helen 12 Trees",
+  "year": 1976,
+  "genre": "Jazz / Fusion",
+  "bpm": "70–120",
+  "shelf": "Jazz / World / Chanson"
+ },
+ {
+  "shelfNo": 7,
+  "n": 6,
+  "artist": "The New Seekers",
+  "album": "In Moscow (Мелодия)",
+  "year": 1978,
+  "genre": "Pop / Soft Rock",
+  "bpm": "95–120",
+  "shelf": "Jazz / World / Chanson"
+ },
+ {
+  "shelfNo": 7,
+  "n": 7,
+  "artist": "Various",
+  "album": "San Remo '81 (Balkanton)",
+  "year": 1981,
+  "genre": "Итальянская эстрада / Pop",
+  "bpm": "100–120",
+  "shelf": "Jazz / World / Chanson"
+ },
+ {
+  "shelfNo": 7,
+  "n": 8,
+  "artist": "Various",
+  "album": "Пулсиращи ноти 1 (Balkanton)",
+  "year": 1981,
+  "genre": "Поп / Диско (сборник)",
+  "bpm": "100–120",
+  "shelf": "Jazz / World / Chanson"
+ },
+ {
+  "shelfNo": 7,
+  "n": 9,
+  "artist": "Toto Cutugno",
+  "album": "Toto Cutugno (сов. изд.)",
+  "year": 1985,
+  "genre": "Итальянский поп / Chanson",
+  "bpm": "90–115",
+  "shelf": "Jazz / World / Chanson"
+ },
+ {
+  "shelfNo": 7,
+  "n": 10,
+  "artist": "Various",
+  "album": "Женский портрет (Мелодия)",
+  "year": 1987,
+  "genre": "Советская эстрада / Pop",
+  "bpm": "90–115",
+  "shelf": "Jazz / World / Chanson"
+ },
+ {
+  "shelfNo": 7,
+  "n": 11,
+  "artist": "Gianni Morandi",
+  "album": "Мой милый враг (Мелодия)",
+  "year": 1987,
+  "genre": "Итальянский поп / Chanson",
+  "bpm": "90–115",
+  "shelf": "Jazz / World / Chanson"
+ },
+ {
+  "shelfNo": 7,
+  "n": 12,
+  "artist": "Владимир Высоцкий",
+  "album": "На концертах №7",
+  "year": 1988,
+  "genre": "Авторская песня / Бард",
+  "bpm": "—",
+  "shelf": "Jazz / World / Chanson"
+ },
+ {
+  "shelfNo": 7,
+  "n": 13,
+  "artist": "Charles Aznavour",
+  "album": "Ses Plus Belles Chansons",
+  "year": 2000,
+  "genre": "Chanson française",
+  "bpm": "70–110",
+  "shelf": "Jazz / World / Chanson"
+ },
+ {
+  "shelfNo": 7,
+  "n": 14,
+  "artist": "Tigran Hamasyan",
+  "album": "StandArt",
+  "year": 2017,
+  "genre": "Jazz / Contemporary Jazz",
+  "bpm": "60–180",
+  "shelf": "Jazz / World / Chanson"
+ },
+ {
+  "shelfNo": 7,
+  "n": 15,
+  "artist": "Sting",
+  "album": "Duets",
+  "year": 2021,
+  "genre": "Pop / Jazz Pop",
+  "bpm": "70–110",
+  "shelf": "Jazz / World / Chanson"
+ },
+ {
+  "shelfNo": 7,
+  "n": 16,
+  "artist": "The Dooley Family and the Others",
+  "album": "сборник",
+  "year": null,
+  "genre": "Folk / Irish Folk",
+  "bpm": "80–110",
+  "shelf": "Jazz / World / Chanson"
+ }
+]
